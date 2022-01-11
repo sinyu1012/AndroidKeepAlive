@@ -59,6 +59,7 @@
             android:process=":live"
             android:theme="@style/OnePixelActivity" />
         <receiver android:name=".OnepxReceiver" />
+
     </application>
 
 </manifest>

@@ -33,7 +33,6 @@ class OnepxActivity : Activity() {
         }
         registerReceiver(br, IntentFilter("finish activity"))
 
-        //检查屏幕状态
         checkScreenOn("onCreate")
     }
 

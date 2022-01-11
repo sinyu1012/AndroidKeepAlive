@@ -11,7 +11,7 @@ import android.provider.Settings
 import io.iftech.android.androidkeepalive.utils.IfRom
 
 fun Context.startForegroundService() {
-    Intent(this, CancelNoticeService::class.java).also { intent ->
+    Intent(this, ForegroundService::class.java).also { intent ->
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             this.startForegroundService(intent)
         } else {
