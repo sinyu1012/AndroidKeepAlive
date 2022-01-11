@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 套路一 开启一个像素的Activity 4/4:清单文件一像素activity设置为透明无actionBar  -->
+    <!-- 也可以是@null
+    <item name="android:windowBackground">@null</item>
+    -->
+    <style name="OnePixelActivity" parent ="android:Theme.Holo.Light.NoActionBar">
+        <!-- 一像素为透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+    </style>
+</resources>
