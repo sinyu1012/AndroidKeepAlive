@@ -3,4 +3,4 @@
 Android 保活实践
 
 
-![](pic/screen.jpng)
+![](pic/screen.jpg)
