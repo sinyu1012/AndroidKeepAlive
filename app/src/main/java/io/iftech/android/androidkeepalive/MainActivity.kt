@@ -18,10 +18,6 @@ class MainActivity : AppCompatActivity() {
         btnCancelNotice.setOnClickListener {
             ServiceHelper.cancelNotice = true
             startForegroundService()
-//            val manager = getSystemService(Service.NOTIFICATION_SERVICE) as? NotificationManager
-//            manager?.cancel(ForegroundNotification.NOTICE_ID)
-
-//            ForegroundNotification.stopForeground()
         }
 
         btnLockAndHide.setOnClickListener {
