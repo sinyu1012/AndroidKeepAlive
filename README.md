@@ -1,6 +1,6 @@
 # 杀不死的App
 
-Android 保活实践
+Android 保活实践，如有相关需求可联系：sinyuper@gmail.com
 
 ## 前言
 
