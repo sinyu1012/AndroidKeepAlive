@@ -36,6 +36,11 @@ Android 保活实践，如有相关需求可联系：sinyuper@gmail.com
 - 后台无声音乐
 - [双进程保活](https://github.com/Marswin/MarsDaemon)，6.0之前
 - [Tim 流氓保活方案](https://segmentfault.com/a/1190000021579231)，开源库：https://github.com/tiann/Leoric
+- **账号同步 + 死亡监听 + 多进程保活（高级方案）**
+  - 核心原理：① 账号周期同步作为冷启动种子，② bindService 跨进程绑定，③ linkToDeath 监听进程死亡并自动复活
+  - 优势：无需前台通知、无需用户交互、系统级调度支持周期唤醒
+  - 限制：进程被 force-stop（stopped=true 态）后周期同步不再触发，需用户手动启动一次解除
+  - 参考实现已 stash（`git stash list` 查看），包含 AccountManager + SyncAdapter + ContentProvider + 多进程 Service + Binder 死亡回调完整链路
 - 终极方案：跟各大系统厂商建立合作关系，OOM_ADJ https://www.jianshu.com/p/8897b7e47466
 
 ## 实现
